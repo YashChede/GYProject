@@ -9,13 +9,14 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules index.js"
   },
   "keywords": [],
   "author": "G&Y",
   "license": "ISC",
-  "description": "building a proejct",
+  "description": "building a full-stack proejct",
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
   }
 }
