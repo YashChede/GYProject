@@ -1,13 +1,13 @@
 import express from 'express';
+import userRouter from '../Backend/routes/user.routes.js'
 
 const app = express();
 
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!, Its Working successfully :)');
-});
+app.use('/api/v1/users', userRouter);
+
 
 
 export { app }
