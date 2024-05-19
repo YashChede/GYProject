@@ -21,10 +21,12 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide a password"],
       minlength: 8,
+      unique: true,
       select: false,
     },
   },
   { timestamps: true }
 );
 
-export const User = mongoose.model("User", userSchema);
+ const User = mongoose.model("User", userSchema);
+ export default User;
